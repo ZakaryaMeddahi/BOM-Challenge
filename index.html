@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            box-sizing: border-box;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .form-container {
+            background-color: gainsboro;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .task-input {
+            width: 300px;
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .add-task {
+            border: none;
+            background-color: #0d6efd;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .tasks-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: gainsboro;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .task {
+            background-color: blanchedalmond;
+            width: 300px;
+            padding: 0 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .delete-task {
+            border: none;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+    <title>BOM Challenge</title>
+</head>
+<body>
+    <div class="form-container">
+        ADD NEW TASK
+        <form action="" class="form">
+            <input type="text" class="task-input">
+            <input type="button" value="Add" class="add-task" id="add-task">
+        </form>
+    </div>
+    
+
+    <div class="tasks-container"></div>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
